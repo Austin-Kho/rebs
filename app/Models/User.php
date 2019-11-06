@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -36,4 +36,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    /** Releation ship */
+
+    public function docs() {
+        return $this->hasMany(\App\Models\Docs\Doc::class);
+    }
+
+    public function subjects() {
+        return $this->hasMany(\App\Models\Docs\Subject::class);
+    }
+
+    public function isAdmin() {
+        return $this->role === 'admin';
+    }
 }
