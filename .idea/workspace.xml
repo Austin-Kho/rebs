@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6edf0f02-f319-4bfd-84ba-83413aa32b75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/components/BackToTop/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/components/Screenfull/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/components/SvgIcon/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/aside-menu.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/footer/copyright.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/header/hamburger.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/header/logo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/header/sub-header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/header/top-nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/logo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/logo.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +36,14 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/layout" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin/layout" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573080346517</updated>
-      <workItem from="1573080350103" duration="10505000" />
+      <workItem from="1573080350103" duration="13655000" />
     </task>
     <servers />
   </component>
