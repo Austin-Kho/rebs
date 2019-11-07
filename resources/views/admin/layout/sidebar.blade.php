@@ -56,10 +56,11 @@
                 <ul class="nav-dropdown-items">
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/17') }}"> {{ __('Received documents') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/18') }}"> {{ __('Sent Documents') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/19') }}"> {{ __('Document Form') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/19') }}"> {{ __('Lawsuit Record') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/20') }}"> {{ __('Agreement-Contract') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/21') }}"> {{ __('Deeds-Certifications') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/22') }}"> {{ __('Regulations') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/23') }}"> {{ __('Document Form') }}</a></li>
                 </ul>
             </li>
 
@@ -67,12 +68,12 @@
                 <a class="nav-link nav-dropdown-toggle" href="#"><i
                             class="nav-icon icon-pie-chart"></i> {{ __('Project Settings') }}</a>
                 <ul class="nav-dropdown-items">
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/27') }}"> {{ __('Initial Classification') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/28') }}"> {{ __('Register Type') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/29') }}"> {{ __('Register Floor Cond') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/30') }}"> {{ __('Sale Price by Condition') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/31') }}"> {{ __('Payment Order') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/32') }}"> {{ __('Session Payment') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/24') }}"> {{ __('Initial Classification') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/25') }}"> {{ __('Register Type') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/26') }}"> {{ __('Register Floor Cond') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/27') }}"> {{ __('Sale Price by Condition') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/28') }}"> {{ __('Payment Order') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/29') }}"> {{ __('Session Payment') }}</a></li>
                 </ul>
             </li>
 
@@ -80,10 +81,10 @@
                 <a class="nav-link nav-dropdown-toggle" href="#"><i
                             class="nav-icon icon-location-pin"></i> {{ __('Project Register') }}</a>
                 <ul class="nav-dropdown-items">
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/23') }}"> {{ __('Project List') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/24') }}"> {{ __('Project Register') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/25') }}"> {{ __('Site List') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/26') }}"> {{ __('Manage Site by Owner') }}</a></li>
+{{--                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/30') }}"> {{ __('Project List') }}</a></li>--}}
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/31') }}"> {{ __('Project Register') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/32') }}"> {{ __('Site List') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/33') }}"> {{ __('Manage Site by Owner') }}</a></li>
                 </ul>
             </li>
 
@@ -92,25 +93,26 @@
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon icon-docs"></i> {{ __('Company Documents') }}
                 </a>
                 <ul class="nav-dropdown-items">
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/33') }}"> {{ __('[Inside] Draft Document') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/34') }}"> {{ __('Received documents') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/35') }}"> {{ __('Sent Documents') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/36') }}"> {{ __('Document Form') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/37') }}"> {{ __('Agreement-Contract') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/38') }}"> {{ __('Deeds-Certifications') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/39') }}"> {{ __('Regulations') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/34') }}"> {{ __('[Inside] Draft Document') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/35') }}"> {{ __('Received documents') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/36') }}"> {{ __('Sent Documents') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/37') }}"> {{ __('Lawsuit Record') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/38') }}"> {{ __('Agreement-Contract') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/39') }}"> {{ __('Deeds-Certifications') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/40') }}"> {{ __('Regulations') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/41') }}"> {{ __('Document Form') }}</a></li>
                 </ul>
             </li>
             <li class="nav-item nav-dropdown">
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon icon-plus"></i> {{ __('Company Funds') }}
                 </a>
                 <ul class="nav-dropdown-items">
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/40') }}"> {{ __('Funds Daily Report') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/41') }}"> {{ __('Deposit History') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/42') }}"> {{ __('Deposit registration') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/43') }}"> {{ __('Bonds-Debt') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/44') }}"> {{ __('Bank Account') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/45') }}"> {{ __('Transaction company') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/42') }}"> {{ __('Funds Daily Report') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/43') }}"> {{ __('Deposit History') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/44') }}"> {{ __('Deposit registration') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/45') }}"> {{ __('Bonds-Debt') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/46') }}"> {{ __('Bank Account') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/47') }}"> {{ __('Transaction company') }}</a></li>
                 </ul>
             </li>
 
@@ -118,9 +120,9 @@
                 <a class="nav-link nav-dropdown-toggle" href="#"><i
                             class="nav-icon icon-people"></i> {{ __('Human Resource') }}</a>
                 <ul class="nav-dropdown-items">
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/46') }}"> {{ __('Employee Info') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/47') }}"> {{ __('Manage Position') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/48') }}"> {{ __('Manage Performance') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/48') }}"> {{ __('Employee Info') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/49') }}"> {{ __('Manage Position') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/50') }}"> {{ __('Manage Performance') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/rebs-departments') }}"> {{ __('Manage Departments') }}</a></li>
                 </ul>
             </li>
@@ -134,10 +136,10 @@
                 <ul class="nav-dropdown-items">
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/profile') }}"> {{ __('Profile') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/rebs-companies') }}"> {{ trans('admin.rebs-company.title') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/49') }}"> {{ __('Working Log') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/52') }}"> {{ __('Working Log') }}</a></li>
                     @if (Auth::id() === 1)
                         <li class="nav-item"><a class="nav-link" href="{{ url('admin/admin-users') }}"> {{ __('Manage access') }}</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('admin/48') }}"> {{ __('Permission Settings') }}</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url('admin/53') }}"> {{ __('Permission Settings') }}</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ url('admin/translations') }}"> {{ __('Translations') }}</a></li>
                     @endif
                 </ul>
