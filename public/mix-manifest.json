@@ -1,6 +1,12 @@
 {
-    "/js/admin.js": "/js/admin.js?id=aae0164e2afac1466962",
-    "/js/app.js": "/js/app.js?id=596c118a6cba04a24782",
-    "/css/app.css": "/css/app.css?id=364750e65572caeb1226",
-    "/css/admin.css": "/css/admin.css?id=53eb3fd7dd93957c9470"
+    "/assets/docs/js/app.js": "/assets/docs/js/app.js?id=f472158468952ace2cec",
+    "/assets/home/js/app.js": "/assets/home/js/app.js?id=03e65d27e8084be40935",
+    "/assets/rebs/js/app.js": "/assets/rebs/js/app.js?id=b7c55014c50c3cc25132",
+    "/js/admin.js": "/js/admin.js?id=de554f8f891ec1f28ac1",
+    "/css/admin.css": "/css/admin.css?id=53eb3fd7dd93957c9470",
+    "/assets/rebs/css/app.css": "/assets/rebs/css/app.css?id=bcd43083625956586b94",
+    "/assets/docs/css/app.css": "/assets/docs/css/app.css?id=82b029021ee1c2b97962",
+    "/assets/home/css/app.css": "/assets/home/css/app.css?id=d718a1996a4314388e0a",
+    "/assets/docs/js/temp.js": "/assets/docs/js/temp.js?id=3bd723c70ef369910d26",
+    "/assets/home/js/plugins.js": "/assets/home/js/plugins.js?id=fd5e302345144ad68799"
 }
