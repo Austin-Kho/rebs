@@ -32,6 +32,7 @@ return [
     'boolean'              => ':attribute은(는) 반드시 true 또는 false 여야 합니다.',
     'confirmed'            => ':attribute 확인 항목이 일치하지 않습니다.',
     'date'                 => ':attribute은(는) 유효한 날짜가 아닙니다.',
+    'date_equals'          => ':attribute은(는) :date와(과) 같은 날짜 여야 합니다.',
     'date_format'          => ':attribute은(는) :format 형식과 일치하지 않습니다.',
     'different'            => ':attribute와(과) :other은(는) 반드시 서로 달라야 합니다.',
     'digits'               => ':attribute은(는) 반드시 :digits 자릿수여야 합니다.',
@@ -91,6 +92,7 @@ return [
     'not_in'               => '선택된 :attribute은(는) 유효하지 않습니다.',
     'not_regex'            => ':attribute은(는) 형식은 유효하지 않습니다.',
     'numeric'              => ':attribute은(는) 반드시 숫자여야 합니다.',
+    'password'             => '비밀번호가 정확하지 않습니다.',
     'present'              => ':attribute 필드는 필수입니다.',
     'regex'                => ':attribute은(는) 형식은 유효하지 않습니다.',
     'required'             => ':attribute 필드는 필수입니다.',
@@ -107,11 +109,13 @@ return [
         "string"  => ':attribute은(는) 반드시 :size 자릿수여야 합니다.',
         "array"   => ':attribute은(는) 반드시 :max 개의 아이템을 포함해야 합니다.',
     ],
+    'starts_with'          => ':attribute은(는) 다음 중 하나로 시작해야 합니다. :values',
     'string'               => ':attribute은(는) 반드시 문자열이어야 합니다.',
     'timezone'             => ':attribute은(는) 올바르지 않은 시간대입니다.',
-    'unique'               => ':attribute은(는) 이미 사용중 입니다.',
+    'unique'               => ':attribute은(는) 이미 사용 중입니다.',
     'uploaded'             => ':attribute을(를) 업로드하지 못했습니다.',
     'url'                  => ':attribute은(는) 형식은 유효하지 않습니다.',
+    'uuid'                 => ':attribute은(는) 유효한 UUID 여야 합니다.',
 
     /*
     |--------------------------------------------------------------------------
