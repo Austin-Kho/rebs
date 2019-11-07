@@ -1,0 +1,26 @@
+[v-cloak] > * {
+    display: none;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.breadcrumb {
+    transition: left 1s,right 1s,width 1s !important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12), 0 0 3px 0 rgba(0,0,0,.04);
+    padding: .5rem 1rem !important;
+}
+
+.aside-menu .nav-link {
+    padding: .5rem 1rem !important;
+}
+
+.sidebar {
+    background: #393F43 !important;
+}
+
+.sidebar .nav-link.active {
+    //color: #fff;
+    background: #4b565f !important;
+}

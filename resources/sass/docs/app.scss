@@ -1,0 +1,624 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// FontAwesome
+@import "~font-awesome/scss/font-awesome";
+// xeicon
+@import url("//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+// Dropzone
+@import '~dropzone/dist/dropzone';
+#docs-app {
+    /*** books 전체 공통 시작 ***/
+     ::selection {
+        background-color: #1AAF54;
+        color: #FFF;
+    }
+     ::-moz-selection {
+        background-color: #1AAF54;
+        color: #FFF;
+    }
+    body,
+    input,
+    select {
+        color: #5b5c5d;
+        background-color: yellow;
+    }
+
+    input[type=number] {
+        text-align: right;
+    }
+    .page-header {
+        padding-bottom: 10px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(222, 226, 230);
+    }
+    .page-header h4 {
+        margin: 20px 0 5px 10px;
+    }
+    .action__book {
+        margin-bottom: 20px;
+    }
+    .media-heading {
+        margin: 5px 0;
+        font-size: 1.2em;
+    }
+    // 북 리스트 제목
+    img {
+        max-width: 90%;
+    }
+    kbd {
+        font-family: "Raleway";
+    }
+    /*** 전체 공통 종료 ***/
+    /*********** Dashboard layout 시작 ************/
+    body {
+        font-size: 14px;
+    }
+    .feather {
+        width: 16px;
+        height: 16px;
+        vertical-align: text-bottom;
+    }
+    /*
+    * Sidebar
+    */
+    .sidebar {
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        /* Behind the navbar */
+        padding: 30px 10px 0;
+        /* Height of navbar */
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    }
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+    .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: #999;
+    }
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
+    .sidebar .nav-link:hover .feather,
+    .sidebar .nav-link.active .feather {
+        color: inherit;
+    }
+    .sidebar-heading {
+        font-family: 'Raleway';
+        font-weight: 100;
+        font-size: 1.1rem;
+        color: #5b729b !important;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+    .sidebar-heading:hover {
+        color: #1a2f74 !important;
+    }
+    /*
+    * Content
+    */
+    [role="main"] {
+        padding-top: 48px;
+        /* Space for fixed navbar */
+    }
+    /*
+    * Navbar
+    */
+    .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: 1.1rem;
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    }
+    /* Top navbar 메인(로고) 마우스오버 */
+    .navbar-brand:hover {
+        color: #bbd6fa;
+    }
+    .navbar .form-control {
+        padding: .75rem 1rem;
+        border-width: 0;
+        border-radius: 0;
+    }
+    .form-control-dark {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-color: rgba(255, 255, 255, .1);
+    }
+    .form-control-dark:focus {
+        color: #3e4446;
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+        background-color: rgb(255, 255, 255);
+    }
+    /*********** Dashboard layout 종료 ************/
+    /*********** Custom SideBar 시작 ************/
+    // @media (max-width: 768px) {
+    //     .sidebar > .toc > .row { margin-top: 78px !important; }
+    //     .sidebar { padding: 30px 5px 0; /* Height of navbar */ }
+    // }
+    .sidebar>.toc {
+        border: 0 !important; // 주변 점선 제거
+        font-size: 13.5px;
+        margin: 0px;
+        display: none;
+    }
+    // 리스트 그룹
+    .list-group-item {
+        // 리스트 그룹 (목록 그룹)
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .list-group-item:hover {
+        background-color: #f2f2f2;
+        border-color: #ddd;
+        color: #1f4e80;
+    }
+    .nav-sidebar>a>span>.d2 {
+        padding-left: 20px;
+        font-weight: lighter;
+    }
+    .nav-sidebar>a>span>.d3 {
+        padding-left: 40px;
+        font-weight: lighter;
+    }
+    .nav-sidebar>a>span>.d4 {
+        padding-left: 60px;
+        font-weight: lighter;
+    }
+    .nav-sidebar>a>span>.d5 {
+        padding-left: 80px;
+        font-weight: lighter;
+    }
+    .side_footer {
+        // 사이드 푸터
+        height: 100px;
+        padding: 30px 10px;
+    }
+    /*********** Custom SideBar 종료 ************/
+    /*** subTop 시작 ***/
+    // @media (max-width: 768px) {
+    //     .menu-group { top:158px !important; }
+    //     .breadcrumb-wrap { top: 80px !important; }
+    // }
+    .menu-group {
+        position: fixed;
+        left: 0;
+        top: 80px;
+        display: none;
+        text-align: left
+    }
+    .menu_link>i {
+        font-size: 20px;
+        color: #999;
+        cursor: pointer;
+        padding-left: 0;
+    }
+    .menu_link>i:hover {
+        color: #555;
+        text-decoration: none;
+    }
+    .breadcrumb-wrap {
+        padding-top: 15px;
+    }
+    nav>.breadcrumb {
+        background-color: #fff;
+        padding: 10px 0;
+    }
+    nav>.breadcrumb>li {
+        padding: 0;
+        padding-right: 8px;
+        margin: 0;
+        font-size: 1em;
+    }
+    /*** subTop 종료 ***/
+    /*** main page 시작 ***/
+    .page {
+        font-family: "Malgun Gothic", Helvetica, arial, sans-serif;
+        font-size: 14px;
+        color: #5b5c5d;
+        line-height: 1.6;
+        /*padding-top: 10px;*/
+        padding-bottom: 10px;
+        background-color: white;
+    }
+    // @media (max-width: 768px) { // 모바일 플랫폼 검색결과 css
+    //     .search-body { margin-top: 100px !important; }
+    // }
+    .search-body {
+        margin: 50px 0;
+    }
+    .search-body u {
+        color: #5b5c5d;
+    }
+    main .main_content {
+        padding: 25px 10px;
+    }
+    .mainSide-padding {
+        // 사이드 패딩
+        padding-left: 8% !important;
+        padding-right: 8% !important;
+    }
+    @media (min-width: 768px) {
+        // PC 플랫폼 사이드 패딩
+        [role="main"] {
+            padding-right: 60px !important;
+            padding-left: 60px !important;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        cursor: text;
+        color: #000;
+        /*position: relative;*/
+    }
+
+    h2:before,
+    h3:before,
+    h4:before,
+    h5:before,
+    h6:before {
+        display: block;
+        content: " ";
+        margin-top: -90px;
+        height: 90px;
+        visibility: hidden;
+    }
+
+    h1,
+    h2 {
+        margin: 90px 0 20px;
+    }
+    h3,
+    h4 {
+        margin: 70px 0 15px;
+    }
+    h5,
+    h6 {
+        margin: 50px 0 10px;
+    }
+    hr {
+        border-top: solid 1px #ccc;
+        padding: 0;
+    }
+    div.bg-warning,
+    div.bg-primary,
+    div.bg-info,
+    div.bg-success,
+    div.bg-danger,
+    div.bg-secondary,
+    div.alert-warning,
+    div.alert-primary,
+    div.alert-info,
+    div.alert-success,
+    div.alert-danger,
+    div.alert-secondary {
+        padding: 15px;
+        // border: solid 3px #f0ebe3;
+        // border-radius:5px;
+        margin-bottom: 10px;
+    }
+    div.alert-warning>h6,
+    div.alert-primary>h6,
+    div.alert-info>h6,
+    div.alert-success>h6,
+    div.alert-danger>h6,
+    div.alert-secondary>h6 {
+        margin-top: 15px;
+    }
+    blockquote {
+        background-color: #F8F8F8;
+        border-radius: 5px;
+        border-left: 3px solid #FF6666;
+        border-radius: 0;
+        font-size: 14px;
+        padding: 20px;
+        margin: 20px 0;
+        color: #34495E;
+    }
+    blockquote p {
+        font-family: sans-serif, Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, "맑은고딕", 'Malgun Gothic';
+        font-weight: normal;
+        font-size: 14px !important;
+        overflow-x: auto;
+        padding: 0;
+        display: block;
+        line-height: 150%;
+        color: #34495E !important;
+    }
+    blockquote> :first-child {
+        margin-top: 0;
+    }
+    blockquote> :last-child {
+        margin-bottom: 0;
+    }
+    table {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    table tr {
+        border-top: 1px solid #cccccc;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    table tr:nth-child(2n) {
+        background-color: #fff;
+    }
+    table tr th {
+        font-weight: bold;
+        border: 1px solid #cccccc;
+        text-align: left;
+        margin: 0;
+        padding: 6px 13px;
+    }
+    table tr td {
+        border: 1px solid #cccccc;
+        text-align: left;
+        margin: 0;
+        padding: 6px 13px;
+    }
+    table tr th :first-child,
+    table tr td :first-child {
+        margin-top: 0;
+    }
+    table tr th :last-child,
+    table tr td :last-child {
+        margin-bottom: 0;
+    }
+    .page-prev-next {
+        /*background-color: #f9f9f9;*/
+        padding: 10px 0 10px 0;
+        border-top: solid 1px #666;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .page-prev-next ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .page-prev-next li {
+        list-style: none;
+        margin: 5px 5px 5px 0;
+    }
+    /*** main page 종료 ***/
+    /*********   기능 CSS 모음 S  *********/
+    /** 엘립시스 - CSS 문자열 자르기 **/
+    .ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+    }
+    .prev_icon {
+        position: fixed !important;
+        top: 50% !important;
+        left: 2% !important;
+    }
+    .next_icon {
+        position: fixed !important;
+        top: 50% !important;
+        right: 2% !important;
+    }
+    .prev_icon:link,
+    .next_icon:link {
+        color: #ccc;
+    }
+    .prev_icon:visited,
+    .next_icon:visited {
+        color: #ccc;
+    }
+    .prev_icon:hover,
+    .next_icon:hover {
+        color: #666 !important;
+    }
+    .prev_icon:active,
+    .next_icon:active {
+        color: #666;
+    }
+    /* Top button */
+    #back-to-top {
+        cursor: pointer;
+        position: fixed;
+        bottom: 65px;
+        right: 3%;
+        display: none;
+        z-index: 9998;
+        transition: all 0.5s ease-in-out;
+        padding: 8px 10px;
+        opacity: 0.4;
+    }
+    #back-to-top:hover {
+        opacity: 0.6;
+    }
+    // Alert, Flash Messages
+    .alert {
+        display: inline-block;
+        width: 100%;
+        opacity: .8;
+        z-index: 999;
+        padding: 20px;
+    }
+    /** Dropzone 시작 */
+    .dropzone {
+        border: 1px solid #b4b8c0;
+        border-radius: 4px;
+    }
+    .dropzone {
+        display: none;
+    }
+    label[for=my-dropzone]>small {
+        cursor: pointer;
+    }
+    /** Dropzone 종료 */
+    /** heighlight.js 시작 **/
+    main {
+        pre {
+            background: #292D30;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        /** 데일리즈 스키마 시작 **/
+        .hljs {
+            display: block;
+            padding: 0.5em;
+            background: #292D30;
+            color: #FFFFFF;
+        }
+        .hljs-comment,
+        .hljs-template_comment,
+        .hljs-javadoc {
+            color: #4F5A63;
+        }
+        .hljs-keyword,
+        .ruby .hljs-function .hljs-keyword,
+        .hljs-request,
+        .hljs-status,
+        .nginx .hljs-title {
+            color: #9FB3C2;
+        }
+        .hljs-function .hljs-keyword,
+        .hljs-sub .hljs-keyword,
+        .method,
+        .hljs-list .hljs-title {
+            color: #C7AF3F;
+        }
+        .hljs-string,
+        .hljs-tag .hljs-value,
+        .hljs-cdata,
+        .hljs-filter .hljs-argument,
+        .hljs-attr_selector,
+        .apache .hljs-cbracket,
+        .hljs-date,
+        .tex .hljs-command,
+        .coffeescript .hljs-attribute {
+            color: #FAFFDB;
+        }
+        .hljs-subst {
+            color: #DAEFA3;
+        }
+        .hljs-regexp {
+            color: #E9C062;
+        }
+        .hljs-title,
+        .hljs-sub .hljs-identifier,
+        .hljs-pi,
+        .hljs-tag,
+        .hljs-tag .hljs-keyword,
+        .hljs-decorator,
+        .hljs-shebang,
+        .hljs-prompt {
+            color: #9FB3C2;
+        }
+        .hljs-symbol,
+        .ruby .hljs-symbol .hljs-string,
+        .hljs-number {
+            color: #C7AF3F;
+        }
+        .hljs-params,
+        .hljs-variable,
+        .clojure .hljs-attribute {
+            color: #FAFFDB;
+        }
+        .css .hljs-tag,
+        .hljs-rules .hljs-property,
+        .hljs-pseudo,
+        .tex .hljs-special {
+            color: #9FB3C2;
+        }
+        .css .hljs-class {
+            color: #FAFFDB;
+        }
+        .hljs-rules .hljs-keyword {
+            color: #FAFFDB;
+        }
+        .hljs-rules .hljs-value {
+            color: #9FB3C2;
+        }
+        .css .hljs-id {
+            color: #8B98AB;
+        }
+        .hljs-annotation,
+        .apache .hljs-sqbracket,
+        .nginx .hljs-built_in {
+            color: #9B859D;
+        }
+        .hljs-preprocessor,
+        .hljs-pragma {
+            color: #8996A8;
+        }
+        .hljs-hexcolor,
+        .css .hljs-value .hljs-number {
+            color: #DD7B3B;
+        }
+        .css .hljs-function {
+            color: #DAD085;
+        }
+        .diff .hljs-header,
+        .hljs-chunk,
+        .tex .hljs-formula {
+            background-color: #0E2231;
+            color: #F8F8F8;
+            font-style: italic;
+        }
+        .diff .hljs-change {
+            background-color: #4A410D;
+            color: #F8F8F8;
+        }
+        .hljs-addition {
+            background-color: #253B22;
+            color: #F8F8F8;
+        }
+        .hljs-deletion {
+            background-color: #420E09;
+            color: #F8F8F8;
+        }
+        .coffeescript .javascript,
+        .javascript .xml,
+        .tex .hljs-formula,
+        .xml .javascript,
+        .xml .vbscript,
+        .xml .css,
+        .xml .hljs-cdata {
+            opacity: 0.5;
+        }
+    }
+    /** 데일리즈 스키마 종료 **/
+    /** heighlight.js 종료 **/
+    /*********   기능 CSS 모음 E  *********/
+}
