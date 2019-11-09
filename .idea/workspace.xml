@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6edf0f02-f319-4bfd-84ba-83413aa32b75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/profile/edit-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/profile/edit-password.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/profile/edit-profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/profile/edit-profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rebs-company/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rebs-company/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rebs-company/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rebs-company/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/rebs-company/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/rebs-company/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573080346517</updated>
-      <workItem from="1573080350103" duration="25063000" />
+      <workItem from="1573080350103" duration="25380000" />
     </task>
     <servers />
   </component>

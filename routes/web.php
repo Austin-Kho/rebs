@@ -49,6 +49,18 @@ Route::get('docs/images/{image}', 'Docs\SubjectsController@image');
 //     dump($query->sql);
 // });
 
+/*
+|--------------------------------------------------------------------------
+| Rebs Routes
+|--------------------------------------------------------------------------
+| Route group for Backend prefixed with "rebs".
+| To Enable Authentication just remove the comment from Rebs Middleware
+|
+*/
+
+Route::get('/rebs', function () {
+    return view('rebs.index');
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -249,6 +261,15 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
     Route::get('/admin/50', function () {
         return view('admin.hello-world');
     });
+    Route::get('/admin/51', function () {
+        return view('admin.hello-world');
+    });
+    Route::get('/admin/52', function () {
+        return view('admin.hello-world');
+    });
+    Route::get('/admin/53', function () {
+        return view('admin.hello-world');
+    });
 
     /* Auto-generated admin routes */
     Route::get('/admin/admin-users', 'Admin\AdminUsersController@index');
@@ -259,28 +280,4 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
     Route::delete('/admin/admin-users/{adminUser}', 'Admin\AdminUsersController@destroy')->name('admin/admin-users/destroy');
     Route::get('/admin/admin-users/{adminUser}/resend-activation', 'Admin\AdminUsersController@resendActivationEmail')->name('admin/admin-users/resendActivationEmail');
 
-});
-
-/*
-|--------------------------------------------------------------------------
-| Rebs Routes
-|--------------------------------------------------------------------------
-| Route group for Backend prefixed with "rebs".
-| To Enable Authentication just remove the comment from Rebs Middleware
-|
-*/
-
-Route::get('/rebs', function () {
-    return view('rebs.index');
-});
-
-/* Auto-generated admin routes */
-Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
-    Route::get('/admin/rebs-companies',                         'Admin\RebsCompaniesController@index');
-    Route::get('/admin/rebs-companies/create',                  'Admin\RebsCompaniesController@create');
-    Route::post('/admin/rebs-companies',                        'Admin\RebsCompaniesController@store');
-    Route::get('/admin/rebs-companies/{rebsCompany}/edit',      'Admin\RebsCompaniesController@edit')->name('admin/rebs-companies/edit');
-    Route::post('/admin/rebs-companies/bulk-destroy',           'Admin\RebsCompaniesController@bulkDestroy')->name('admin/rebs-companies/bulk-destroy');
-    Route::post('/admin/rebs-companies/{rebsCompany}',          'Admin\RebsCompaniesController@update')->name('admin/rebs-companies/update');
-    Route::delete('/admin/rebs-companies/{rebsCompany}',        'Admin\RebsCompaniesController@destroy')->name('admin/rebs-companies/destroy');
 });
