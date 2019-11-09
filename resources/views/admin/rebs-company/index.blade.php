@@ -1,4 +1,4 @@
-@extends('brackets/admin-ui::admin.layout.default')
+@extends('admin.core-layout.default')
 
 @section('title', trans('admin.rebs-company.actions.index'))
 
