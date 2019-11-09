@@ -25,7 +25,7 @@ Vue.use(VueQuillEditor);
 Vue.use(Notifications);
 Vue.use(VueCookie);
 
-Vue.config.devtools = true
+Vue.config.devtools = true;
 
 let vm = new Vue({
     mixins: [Admin],

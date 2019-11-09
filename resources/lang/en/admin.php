@@ -29,5 +29,36 @@ return [
         ],
     ],
 
+    'rebs-company' => [
+        'title' => 'Rebs Companies',
+
+        'actions' => [
+            'index' => 'Rebs Companies',
+            'create' => 'New Rebs Company',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'name' => 'Name',
+            'registration_number' => 'Registration number',
+            'ceo' => 'Ceo',
+            'business_number' => 'Business number',
+            'business_type' => 'Business type',
+            'sectors' => 'Sectors',
+            'main_tel' => 'Main tel',
+            'main_fax' => 'Main fax',
+            'establishment_date' => 'Establishment date',
+            'opening_date' => 'Opening date',
+            'tax_invoice_email' => 'Tax invoice email',
+            'tax_office' => 'Tax office',
+            'postcode' => 'Postcode',
+            'address' => 'Address',
+            'detail_address' => 'Detail address',
+            'extra_address' => 'Extra address',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

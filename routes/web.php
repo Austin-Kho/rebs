@@ -273,3 +273,14 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
 Route::get('/rebs', function () {
     return view('rebs.index');
 });
+
+/* Auto-generated admin routes */
+Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+    Route::get('/admin/rebs-companies',                         'Admin\RebsCompaniesController@index');
+    Route::get('/admin/rebs-companies/create',                  'Admin\RebsCompaniesController@create');
+    Route::post('/admin/rebs-companies',                        'Admin\RebsCompaniesController@store');
+    Route::get('/admin/rebs-companies/{rebsCompany}/edit',      'Admin\RebsCompaniesController@edit')->name('admin/rebs-companies/edit');
+    Route::post('/admin/rebs-companies/bulk-destroy',           'Admin\RebsCompaniesController@bulkDestroy')->name('admin/rebs-companies/bulk-destroy');
+    Route::post('/admin/rebs-companies/{rebsCompany}',          'Admin\RebsCompaniesController@update')->name('admin/rebs-companies/update');
+    Route::delete('/admin/rebs-companies/{rebsCompany}',        'Admin\RebsCompaniesController@destroy')->name('admin/rebs-companies/destroy');
+});
