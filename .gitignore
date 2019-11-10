@@ -5,6 +5,7 @@ public/media/**/*.*
 /storage/*.key
 /storage/uploads/
 /storage/medialibrary/
+!/storage/images/avatar.png
 /vendor
 .env
 .phpunit.result.cache
