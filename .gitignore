@@ -3,6 +3,8 @@
 public/storage/
 public/media/**/*.*
 /storage/*.key
+/storage/uploads/
+/storage/medialibrary/
 /vendor
 .env
 .phpunit.result.cache

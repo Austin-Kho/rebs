@@ -15,7 +15,7 @@ class CreateDocsTable extends Migration
     {
         Schema::create('docs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('user_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->boolean('is_public')->default(0);
             $table->string('author');
