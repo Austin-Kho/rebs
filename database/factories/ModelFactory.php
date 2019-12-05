@@ -41,3 +41,15 @@ $factory->define(App\Models\RebsCompany::class, static function (Faker\Generator
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\RebsDepartment::class, static function (Faker\Generator $faker) {
+    return [
+        'rebs_company_id' => $faker->sentence,
+        'name' => $faker->firstName,
+        'description' => $faker->sentence,
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

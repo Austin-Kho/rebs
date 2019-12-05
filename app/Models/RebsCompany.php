@@ -4,8 +4,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class RebsCompany extends Model
 {
-    
-    
+
+
     protected $fillable = [
         "name",
         "registration_number",
@@ -23,23 +23,23 @@ class RebsCompany extends Model
         "address",
         "detail_address",
         "extra_address",
-    
+
     ];
-    
+
     protected $hidden = [
-    
+
     ];
-    
+
     protected $dates = [
         "establishment_date",
         "opening_date",
         "created_at",
         "updated_at",
-    
+
     ];
-    
-    
-    
+
+
+
     protected $appends = ['resource_url'];
 
     /* ************************ ACCESSOR ************************* */
@@ -48,5 +48,7 @@ class RebsCompany extends Model
         return url('/admin/rebs-companies/'.$this->getKey());
     }
 
-    
+    public function departments() {
+        return $this->hasMany(RebsDepartment::class);
+    }
 }

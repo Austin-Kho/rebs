@@ -281,3 +281,13 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
     Route::get('/admin/admin-users/{adminUser}/resend-activation', 'Admin\AdminUsersController@resendActivationEmail')->name('admin/admin-users/resendActivationEmail');
 
 });
+
+/* Auto-generated admin routes */
+Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+    Route::get('/admin/rebs-departments',                       'Admin\RebsDepartmentsController@index');
+    Route::get('/admin/rebs-departments/create',                'Admin\RebsDepartmentsController@create');
+    Route::post('/admin/rebs-departments',                      'Admin\RebsDepartmentsController@store');
+    Route::get('/admin/rebs-departments/{rebsDepartment}/edit', 'Admin\RebsDepartmentsController@edit')->name('admin/rebs-departments/edit');
+    Route::post('/admin/rebs-departments/{rebsDepartment}',     'Admin\RebsDepartmentsController@update')->name('admin/rebs-departments/update');
+    Route::delete('/admin/rebs-departments/{rebsDepartment}',   'Admin\RebsDepartmentsController@destroy')->name('admin/rebs-departments/destroy');
+});

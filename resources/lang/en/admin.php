@@ -60,5 +60,23 @@ return [
         ],
     ],
 
+    'rebs-department' => [
+        'title' => 'Rebs Departments',
+
+        'actions' => [
+            'index' => 'Rebs Departments',
+            'create' => 'New Rebs Department',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'rebs_company_id' => 'Rebs company',
+            'name' => 'Name',
+            'description' => 'Description',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];
