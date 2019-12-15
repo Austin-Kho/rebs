@@ -111,7 +111,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/43') }}"> {{ __('Deposit History') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/44') }}"> {{ __('Deposit registration') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/45') }}"> {{ __('Bonds-Debt') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/46') }}"> {{ __('Bank Account') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/rebs-bank-accounts') }}"> {{ __('Bank Account') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/47') }}"> {{ __('Transaction company') }}</a></li>
                 </ul>
             </li>

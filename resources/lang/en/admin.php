@@ -78,5 +78,42 @@ return [
         ],
     ],
 
+    'rebs-bank-account' => [
+        'title' => 'Rebs Bank Accounts',
+
+        'actions' => [
+            'index' => 'Rebs Bank Accounts',
+            'create' => 'New Rebs Bank Account',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            
+        ],
+    ],
+
+    'rebs-bank-account' => [
+        'title' => 'Rebs Bank Accounts',
+
+        'actions' => [
+            'index' => 'Rebs Bank Accounts',
+            'create' => 'New Rebs Bank Account',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'rebs_company_id' => 'Rebs company',
+            'name' => 'Name',
+            'bank' => 'Bank',
+            'account_number' => 'Account number',
+            'manager' => 'Manager',
+            'creation_date' => 'Creation date',
+            'description' => 'Description',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

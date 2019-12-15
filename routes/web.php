@@ -238,8 +238,18 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
         Route::delete('/admin/rebs-departments/{rebsDepartment}',   'Admin\RebsDepartmentsController@destroy')->name('admin/rebs-departments/destroy');
     });
 
-    Route::get('/admin/46', function () {
-        return view('admin.hello-world');
+//    Route::get('/admin/46', function () {
+//        return view('admin.hello-world');
+//    });
+    /* Auto-generated admin routes */
+    Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+        Route::get('/admin/rebs-bank-accounts',                     'Admin\RebsBankAccountsController@index');
+        Route::get('/admin/rebs-bank-accounts/create',              'Admin\RebsBankAccountsController@create');
+        Route::post('/admin/rebs-bank-accounts',                    'Admin\RebsBankAccountsController@store');
+        Route::get('/admin/rebs-bank-accounts/{rebsBankAccount}/edit','Admin\RebsBankAccountsController@edit')->name('admin/rebs-bank-accounts/edit');
+        Route::post('/admin/rebs-bank-accounts/bulk-destroy',       'Admin\RebsBankAccountsController@bulkDestroy')->name('admin/rebs-bank-accounts/bulk-destroy');
+        Route::post('/admin/rebs-bank-accounts/{rebsBankAccount}',  'Admin\RebsBankAccountsController@update')->name('admin/rebs-bank-accounts/update');
+        Route::delete('/admin/rebs-bank-accounts/{rebsBankAccount}','Admin\RebsBankAccountsController@destroy')->name('admin/rebs-bank-accounts/destroy');
     });
 
     /* 47. 회사 정보 등록 - Auto-generated admin routes */
@@ -290,4 +300,17 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
     Route::get('/admin/rebs-departments/{rebsDepartment}/edit', 'Admin\RebsDepartmentsController@edit')->name('admin/rebs-departments/edit');
     Route::post('/admin/rebs-departments/{rebsDepartment}',     'Admin\RebsDepartmentsController@update')->name('admin/rebs-departments/update');
     Route::delete('/admin/rebs-departments/{rebsDepartment}',   'Admin\RebsDepartmentsController@destroy')->name('admin/rebs-departments/destroy');
+});
+
+
+
+/* Auto-generated admin routes */
+Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+    Route::get('/admin/rebs-bank-accounts',                     'Admin\RebsBankAccountsController@index');
+    Route::get('/admin/rebs-bank-accounts/create',              'Admin\RebsBankAccountsController@create');
+    Route::post('/admin/rebs-bank-accounts',                    'Admin\RebsBankAccountsController@store');
+    Route::get('/admin/rebs-bank-accounts/{rebsBankAccount}/edit','Admin\RebsBankAccountsController@edit')->name('admin/rebs-bank-accounts/edit');
+    Route::post('/admin/rebs-bank-accounts/bulk-destroy',       'Admin\RebsBankAccountsController@bulkDestroy')->name('admin/rebs-bank-accounts/bulk-destroy');
+    Route::post('/admin/rebs-bank-accounts/{rebsBankAccount}',  'Admin\RebsBankAccountsController@update')->name('admin/rebs-bank-accounts/update');
+    Route::delete('/admin/rebs-bank-accounts/{rebsBankAccount}','Admin\RebsBankAccountsController@destroy')->name('admin/rebs-bank-accounts/destroy');
 });

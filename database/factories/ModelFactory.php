@@ -53,3 +53,26 @@ $factory->define(App\Models\RebsDepartment::class, static function (Faker\Genera
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\RebsBankAccount::class, static function (Faker\Generator $faker) {
+    return [
+        
+        
+    ];
+});
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\RebsBankAccount::class, static function (Faker\Generator $faker) {
+    return [
+        'rebs_company_id' => $faker->sentence,
+        'name' => $faker->firstName,
+        'bank' => $faker->sentence,
+        'account_number' => $faker->sentence,
+        'manager' => $faker->sentence,
+        'creation_date' => $faker->date(),
+        'description' => $faker->sentence,
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

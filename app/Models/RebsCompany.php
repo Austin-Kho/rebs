@@ -51,4 +51,8 @@ class RebsCompany extends Model
     public function departments() {
         return $this->hasMany(RebsDepartment::class);
     }
+
+    public function bankAccounts() {
+        return $this->hasMany(RebsBankAccount::class);
+    }
 }

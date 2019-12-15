@@ -1,6 +1,6 @@
 @extends('admin.core-layout.default')
 
-@section('title', trans('admin.rebs-company.actions.create'))
+@section('title', trans('admin.rebs-bank-account.actions.create'))
 
 @section('body')
 
@@ -8,9 +8,9 @@
 
                 <div class="card">
 
-        <rebs-company-form
-            :action="'{{ url('admin/rebs-companies') }}'"
-            ref="company"
+        <rebs-bank-account-form
+            :action="'{{ url('admin/rebs-bank-accounts') }}'"
+            :companies="{{ $companies->toJson() }}"
             v-cloak
             inline-template>
 
@@ -19,19 +19,19 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="card-header">
-                            <i class="fa fa-plus"></i> {{ trans('admin.rebs-company.actions.create') }}
+                            <i class="fa fa-plus"></i> {{ trans('admin.rebs-bank-account.actions.create') }}
                         </div>
                     </div>
                     <div class="col">
                         <div class="card-header text-right">
-                            <i class="fa fa-list"></i> <a href="{{ url('admin/rebs-companies') }}">{{ __('to_list') }}</a>
+                            <i class="fa fa-list"></i> <a href="{{ url('admin/rebs-bank-accounts') }}">{{ __('to_list') }}</a>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="card-body">
-                    @include('admin.rebs-company.components.form-elements')
+                    @include('admin.rebs-bank-account.components.form-elements')
                 </div>
 
                 <div class="card-footer">
@@ -43,7 +43,7 @@
 
             </form>
 
-        </rebs-company-form>
+        </rebs-bank-account-form>
 
         </div>
 
