@@ -29,7 +29,7 @@
         "flag-icon-css": "^3.4.5",
         "font-awesome": "^4.7.0",
         "highlightjs": "^9.16.2",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "jquery-tabby": "^0.13.1",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
